@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'vanngo'
+    bintrayRepo = 'ngovan'
     bintrayName = 'ngo.van.sharedprefutils'
 
     publishedGroupId = 'ngo.van.sharedprefutils'
@@ -11,7 +11,7 @@ ext {
     libraryDescription = 'prebuild shared pref'
 
     siteUrl = 'https://github.com/vanducngo/sharedpref'
-    gitUrl = 'git@github.com:vanducngo/sharedpref.git'
+    gitUrl = 'https://github.com/vanducngo/sharedpref.git'
 
     libraryVersion = '1.0.0'
 
@@ -33,9 +33,6 @@ android {
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
@@ -54,5 +51,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 // Place it at the end of the file
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//apply from : 'https://raw.githubusercontent.com/vanducngo/sharedpref/master/ChallengeGame/build.gradle'
+apply from: 'https://raw.githubusercontent.com/vanducngo/sharedpref/master/ChallengeGame/ngo.van.sharedprefutils/build.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
