@@ -1,0 +1,1 @@
+ALTER TABLE questions ADD COLUMN version2 INTEGER;
